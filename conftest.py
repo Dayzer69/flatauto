@@ -16,7 +16,7 @@ def browser_context_args(browser_context_args):
 
 @pytest.fixture(scope="function")
 def browser(playwright: Playwright):
-    browser = playwright.chromium.launch(headless=False)
+    browser = playwright.chromium.launch(headless=True)
     context = browser.new_context(
         geolocation={"latitude": 55.7558, "longitude": 37.6173},
         permissions=["geolocation"]
