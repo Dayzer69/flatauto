@@ -1,5 +1,6 @@
 from random import sample
 from string import ascii_lowercase
+
 from time import sleep
 
 x = ''.join(sample(ascii_lowercase, 10)) + '@test.ru'
